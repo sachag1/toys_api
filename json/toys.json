@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Wooden Train Set",
+    "info": "A 40 piece wooden train set with rails, a bridge and a tunnel. Suitable for ages 3 and up.",
+    "category": "wooden",
+    "img_url": "https://images.pexels.com/photos/1148998/pexels-photo-1148998.jpeg",
+    "price": 149
+  },
+  {
+    "name": "Wooden Building Blocks",
+    "info": "100 colored blocks in a cotton bag, helps to develop motor skills and imagination.",
+    "category": "wooden",
+    "img_url": "https://images.pexels.com/photos/298825/pexels-photo-298825.jpeg",
+    "price": 89
+  },
+  {
+    "name": "Wooden Shape Sorter",
+    "info": "A classic sorting cube with six shapes, for toddlers from 18 months.",
+    "category": "wooden",
+    "img_url": "https://images.pexels.com/photos/3661193/pexels-photo-3661193.jpeg",
+    "price": 65
+  },
+  {
+    "name": "Wooden Kitchen",
+    "info": "A small kitchen with an oven, a sink and eight accessories, made of solid beech wood.",
+    "category": "wooden",
+    "img_url": "https://images.pexels.com/photos/4740521/pexels-photo-4740521.jpeg",
+    "price": 399
+  },
+  {
+    "name": "Space Puzzle 500",
+    "info": "A 500 piece puzzle of the solar system, finished size 50x70 cm.",
+    "category": "puzzles",
+    "img_url": "https://images.pexels.com/photos/1314435/pexels-photo-1314435.jpeg",
+    "price": 79
+  },
+  {
+    "name": "World Map Puzzle",
+    "info": "A 300 piece puzzle of the world map with the names of the countries in English.",
+    "category": "puzzles",
+    "img_url": "https://images.pexels.com/photos/275033/pexels-photo-275033.jpeg",
+    "price": 69
+  },
+  {
+    "name": "Animals Floor Puzzle",
+    "info": "A large 24 piece floor puzzle with jungle animals, thick cardboard for small hands.",
+    "category": "puzzles",
+    "img_url": "https://images.pexels.com/photos/1912868/pexels-photo-1912868.jpeg",
+    "price": 55
+  },
+  {
+    "name": "3D Castle Puzzle",
+    "info": "A 216 piece three dimensional puzzle that builds a medieval castle.",
+    "category": "puzzles",
+    "img_url": "https://images.pexels.com/photos/460736/pexels-photo-460736.jpeg",
+    "price": 129
+  },
+  {
+    "name": "Remote Control Car",
+    "info": "An off road car with a 2.4 GHz remote, a rechargeable battery and about 20 minutes of driving.",
+    "category": "electronic",
+    "img_url": "https://images.pexels.com/photos/163407/pexels-photo-163407.jpeg",
+    "price": 249
+  },
+  {
+    "name": "Mini Drone For Kids",
+    "info": "A small drone with automatic take off and landing and protection for the propellers.",
+    "category": "electronic",
+    "img_url": "https://images.pexels.com/photos/442587/pexels-photo-442587.jpeg",
+    "price": 329
+  },
+  {
+    "name": "Robot Kit",
+    "info": "A robot kit that the child assembles alone, with a motor and a line following sensor.",
+    "category": "electronic",
+    "img_url": "https://images.pexels.com/photos/2085831/pexels-photo-2085831.jpeg",
+    "price": 279
+  },
+  {
+    "name": "Kids Digital Camera",
+    "info": "A shock resistant digital camera with a 2 inch screen and a 16 GB memory card.",
+    "category": "electronic",
+    "img_url": "https://images.pexels.com/photos/51383/photo-camera-subject-photographer-51383.jpeg",
+    "price": 199
+  }
+]
