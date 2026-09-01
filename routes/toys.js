@@ -43,7 +43,7 @@ const sendToys = async (req, res, extraFilter = {}) => {
   }
   catch (err) {
     console.log(err);
-    res.status(502).json({ err });
+    res.status(502).json({ err: err.message });
   }
 };
 
@@ -58,7 +58,7 @@ router.get("/count", async (req, res) => {
   }
   catch (err) {
     console.log(err);
-    res.status(502).json({ err });
+    res.status(502).json({ err: err.message });
   }
 });
 
@@ -81,7 +81,7 @@ router.get("/single/:id", async (req, res) => {
   }
   catch (err) {
     console.log(err);
-    res.status(502).json({ err });
+    res.status(502).json({ err: err.message });
   }
 });
 
@@ -103,7 +103,7 @@ router.post("/", auth, async (req, res) => {
   }
   catch (err) {
     console.log(err);
-    res.status(502).json({ err });
+    res.status(502).json({ err: err.message });
   }
 });
 
@@ -122,7 +122,7 @@ router.put("/:id", auth, async (req, res) => {
   }
   catch (err) {
     console.log(err);
-    res.status(502).json({ err });
+    res.status(502).json({ err: err.message });
   }
 });
 
@@ -137,7 +137,7 @@ router.delete("/:id", auth, async (req, res) => {
   }
   catch (err) {
     console.log(err);
-    res.status(502).json({ err });
+    res.status(502).json({ err: err.message });
   }
 });
 

@@ -15,7 +15,7 @@ router.get("/userInfo", auth, async (req, res) => {
   }
   catch (err) {
     console.log(err);
-    res.status(502).json({ err });
+    res.status(502).json({ err: err.message });
   }
 });
 
@@ -36,7 +36,7 @@ router.post("/", async (req, res) => {
       return res.status(400).json({ err: "Email already in system", code: 11000 });
     }
     console.log(err);
-    res.status(502).json({ err });
+    res.status(502).json({ err: err.message });
   }
 });
 
@@ -59,7 +59,7 @@ router.post("/login", async (req, res) => {
   }
   catch (err) {
     console.log(err);
-    res.status(502).json({ err });
+    res.status(502).json({ err: err.message });
   }
 });
 
