@@ -2,6 +2,8 @@
 
 **קוד המקור:** https://github.com/sachag1/toys_api
 
+**השרת באוויר (Vercel):** https://toys-api-pi.vercel.app
+
 שרת REST API למערכת צעצועים, בנוי ב-Node.js עם Express ו-MongoDB.
 המערכת מאפשרת למשתמש רשום להוסיף צעצוע, לערוך אותו ולמחוק אותו,
 ולכל אחד לשלוף מידע על הצעצועים שנמצאים במסד הנתונים.
@@ -210,8 +212,8 @@ x-api-key: <הטוקן שהתקבל>
 ### `GET /toys` - כל הצעצועים
 
 ```
-GET localhost:3001/toys
-GET localhost:3001/toys?skip=1
+GET https://toys-api-pi.vercel.app/toys
+GET https://toys-api-pi.vercel.app/toys?skip=1
 ```
 
 הראוט הזה מקבל גם את הקוואריז של החיפוש, הקטגוריה וטווח המחירים
@@ -227,7 +229,7 @@ GET localhost:3001/toys?skip=1
 דוגמה לשילוב - פאזלים במחיר של עד 80 שקלים:
 
 ```
-GET localhost:3001/toys?category=puzzles&max=80
+GET https://toys-api-pi.vercel.app/toys?category=puzzles&max=80
 ```
 
 **תשובה:** מערך של אובייקטים.
@@ -237,8 +239,8 @@ GET localhost:3001/toys?category=puzzles&max=80
 ### `GET /toys/search?s=` - חיפוש
 
 ```
-GET localhost:3001/toys/search?s=robot
-GET localhost:3001/toys/search?s=robot&skip=1
+GET https://toys-api-pi.vercel.app/toys/search?s=robot
+GET https://toys-api-pi.vercel.app/toys/search?s=robot&skip=1
 ```
 
 החיפוש מתבצע במאפיין `name` **או** במאפיין `info`, באמצעות ביטוי
@@ -249,8 +251,8 @@ GET localhost:3001/toys/search?s=robot&skip=1
 ### `GET /toys/category/:catname` - לפי קטגוריה
 
 ```
-GET localhost:3001/toys/category/wooden
-GET localhost:3001/toys/category/electronic?skip=1
+GET https://toys-api-pi.vercel.app/toys/category/wooden
+GET https://toys-api-pi.vercel.app/toys/category/electronic?skip=1
 ```
 
 ---
@@ -258,7 +260,7 @@ GET localhost:3001/toys/category/electronic?skip=1
 ### `GET /toys/prices?min=&max=` - טווח מחירים
 
 ```
-GET localhost:3001/toys/prices?min=100&max=300
+GET https://toys-api-pi.vercel.app/toys/prices?min=100&max=300
 ```
 
 משתמש באופרטורים `$gte` ו-`$lte` של מונגו.
@@ -269,7 +271,7 @@ GET localhost:3001/toys/prices?min=100&max=300
 ### `GET /toys/single/:id` - צעצוע אחד
 
 ```
-GET localhost:3001/toys/single/66d1f2a4b8c9d0e1f2a3b4c5
+GET https://toys-api-pi.vercel.app/toys/single/66d1f2a4b8c9d0e1f2a3b4c5
 ```
 
 מחזיר **אובייקט בודד** ולא מערך.
@@ -283,7 +285,7 @@ GET localhost:3001/toys/single/66d1f2a4b8c9d0e1f2a3b4c5
 ### `GET /toys/count` - מספר הרשומות
 
 ```
-GET localhost:3001/toys/count
+GET https://toys-api-pi.vercel.app/toys/count
 ```
 
 **תשובה:**
@@ -328,7 +330,7 @@ GET localhost:3001/toys/count
 העדכון מתבצע לפי `_id` **וגם** לפי `user_id` שנלקח מהטוקן.
 
 ```
-PUT localhost:3001/toys/66d1f2a4b8c9d0e1f2a3b4c5
+PUT https://toys-api-pi.vercel.app/toys/66d1f2a4b8c9d0e1f2a3b4c5
 ```
 
 הבאדי זהה לזה של ההוספה.
@@ -345,7 +347,7 @@ PUT localhost:3001/toys/66d1f2a4b8c9d0e1f2a3b4c5
 **דורש טוקן**. כמו בעריכה, אפשר למחוק רק צעצוע ששייך למשתמש.
 
 ```
-DELETE localhost:3001/toys/66d1f2a4b8c9d0e1f2a3b4c5
+DELETE https://toys-api-pi.vercel.app/toys/66d1f2a4b8c9d0e1f2a3b4c5
 ```
 
 | קוד | מתי |
