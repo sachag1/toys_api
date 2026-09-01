@@ -14,8 +14,11 @@ app.use(express.json());
 
 configRoutes(app);
 
-const server = http.createServer(app);
-const port = process.env.PORT || 3001;
-server.listen(port);
+if (!process.env.VERCEL) {
+  const server = http.createServer(app);
+  const port = process.env.PORT || 3001;
+  server.listen(port);
+  console.log("http://localhost:" + port);
+}
 
-console.log("http://localhost:" + port);
+module.exports = app;
